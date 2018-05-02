@@ -1,0 +1,11 @@
+doctype html
+html
+head
+title title
+body
+    h1 Customer List using Jade engine
+ 
+    ul
+      for item in customers
+        li= item.name + ":"
+         p=item.address

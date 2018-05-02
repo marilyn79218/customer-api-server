@@ -1,0 +1,10 @@
+extends ./layout
+
+block page-header
+    h1 Customer List using Jade engine
+
+block content
+    ul
+      for item in customers
+        li= item.name + ":"
+         p=item.address
