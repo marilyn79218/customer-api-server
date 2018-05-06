@@ -1,11 +1,21 @@
 This is a very basic sample of how to *create*, *update*, *delete* and *get data* form **mongoDB** with **Node.js**
 
-# Routing
+## Routing
 | Route  | HTTP Verb | Description |
 | :------------ |:---------------:| -----:|
 | /customer | `POST` | Create a customer. |
 | /customer/:customer_name | `DELETE` | Delete a customer. |
 | /customer/:customer_name | `PUT` | Update a customer. |
+
+### POST API data format
+```js
+[
+  {
+    "name": "p1",
+    "address": "Taipei"
+  }
+]
+```
 
 ## Development
 ```sh
