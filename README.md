@@ -1,27 +1,22 @@
 This is a very basic sample of how to *create*, *update*, *delete* and *get data* form **mongoDB** with **Node.js**
 
-# How to use
-  - to start the server with function get data list and display 
-      ```
-      node monjadeserver.js 
-      ```
-  - to create new data
-    ```
-    node moncreate.js 
-    ```
-  - to update existed data
-    ```
-    node monupdate.js
-    ```
-  - to delete specific data
-    ```
-    node mondelete.js
-    ```
+# Routing
+| Route  | HTTP Verb | Description |
+| :------------ |:---------------:| -----:|
+| /customer | `POST` | Create a customer. |
+| /customer/:customer_name | `DELETE` | Delete a customer. |
+| /customer/:customer_name | `PUT` | Update a customer. |
 
->P.S  You need to install a mongo service either in your machine 
+## Development
+```sh
+node monjadeserver.js 
+```
+
+>Note  You need to install a mongo service either in your machine 
       or connect to the server elsewhere, be sure to change the 
       **connection string** before you go.
 
-> For how to install mongoDB, please refer to [this article][df1]
+> For how to install mongoDB, please refer to [this article][df1] and [this][df2].
 
 [df1]: <https://ithelp.ithome.com.tw/articles/10186483>
+[df2]: <https://github.com/darkochen/nodejs>
