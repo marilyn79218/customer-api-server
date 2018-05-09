@@ -1,5 +1,6 @@
 var updateCustomers = function(db, updateRequest, updateResonse) {
   var dbo = db.db("darko_test");
+
   var updateQuery = {
     name: updateRequest.params.customer_name,
   };
@@ -8,6 +9,8 @@ var updateCustomers = function(db, updateRequest, updateResonse) {
       ...updateRequest.body,
     },
   };
+  // var myquery = { address: "Mountain 21" };
+  // var newvalues = { $set: {name: "Mickey", address: "Canyon 123" } };
 
   dbo.collection("customers").updateOne(updateQuery, newValue, function(err, res) {
     if (err) throw err;

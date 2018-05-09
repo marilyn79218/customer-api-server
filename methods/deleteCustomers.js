@@ -3,6 +3,7 @@ var deleteCustomers = function(db, deleteRequest, deleteResonse) {
   var deleteQuery = {
     name: deleteRequest.params.customer_name,
   };
+  // var myquery = { name: 'Amy' };
 
   dbo.collection("customers").deleteOne(deleteQuery, function(err, obj) {
     if (err) throw err;
