@@ -19,7 +19,7 @@ This is a very basic sample of how to *create*, *update*, *delete* and *get data
 
 ## Development
 ```sh
-node monjadeserver.js 
+yarn start
 ```
 
 >Note  You need to install a mongo service either in your machine 
