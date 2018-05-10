@@ -23,9 +23,9 @@ MongoClient.connect(url, function(err, database) {
 });
 
 //set view engine
-app.set("view engine","jade");
+app.set("view engine", "jade");
 //set view directory
-app.set("views","MyViews");
+app.set("views", "app/MyViews");
 app.use(bodyParser.json());
 
 app.get('/customer',function(req, res) {
